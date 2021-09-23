@@ -1,0 +1,13 @@
+const moment = require('moment');
+// let date = new Date();
+// let today = date.toLocaleDateString();
+// let tomorrow = date.setDate(date.getDate() + 1);
+// let tomorrow1 = tomorrow.toIOSString();
+// console.log(tomorrow1);
+let today = moment();
+let number = 10;
+let tomorrow = moment(today).add(1, 'days');
+console.log(tomorrow.format('llll'));
+console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+console.log(moment().add(30, 'days').format('llll'));
+console.log(today.add(30, 'days').format('llll'));
